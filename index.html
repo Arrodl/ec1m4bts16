@@ -25,51 +25,110 @@
       background-image: url("images/road.png");
       display: inline-block;
     }
+
+		.loading {
+    background: url('../images/ico_loading.gif') no-repeat center center; /*Esta parte hará la función de cargador mientras aparece el contenido*/
+		}
+		section {
+		    opacity: 0; /*El valor inicial de la opacidad del contenedor es 0, por medio de javascript haremos que aparezca al asignarle la clase .loaded_section*/
+		    -webkit-transition:opacity .6s;
+		    -moz-transition:opacity .6s;
+		    -o-transition:opacity .6s;
+		    transition: opacity .6s;
+		}
+		.loaded section {
+		    opacity: 1;
+		}
+
+		#revealAnim .images-container img {
+    -webkit-transition: -webkit-transform .6s .9s;
+    -moz-transition: -moz-transform .6s .9s;
+    transition: transform .6s .9s;
+		}
+		#revealAnim .images-container .back { z-index:2;
+		    -webkit-transform:translate3d(-40%, 0, 0);
+		       -moz-transform:translate3d(-40%, 0, 0);
+		            transform:translate3d(-40%, 0, 0);
+		}
+		#revealAnim .images-container .front {
+		    -webkit-transform:translate3d(61.6%, 0, 0);
+		       -moz-transform:translate3d(61.6%, 0, 0);
+		            transform:translate3d(61.6%, 0, 0);
+		}
+		#revealAnim .images-container .side {
+		    -webkit-transform:translate3d(-338%, 0, 0);
+		       -moz-transform:translate3d(-338%, 0, 0);
+		            transform:translate3d(-338%, 0, 0);
+		}
+		.viewing-page-2 #revealAnim .images-container img {
+		    -webkit-transform: translate3d(0, 0, 0) !important;
+		    -moz-transform: translate3d(0, 0, 0) !important;
+		    transform: translate3d(0, 0, 0) !important;
+		}
   </style>
+	<script>
+	function goToByScroll(id){
+          // Reove "link" from the ID
+					id = id.replace("link", "");
+          // Scroll
+        $('html,body').animate({
+            scrollTop: $("#"+id).offset().top},
+            'slow');
+    }
+		$("#menu > ul > li > a").click(function(e) {
+          // Prevent a page reload when a link is pressed
+        e.preventDefault();
+          // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+		</script>
+
 </head>
 
-<body>
+<body class="loading">
   <!--Menu-->
   <div class="banner" id="home">
     <nav class="navbar navbar-default">
       <div class="row">
         <div class="col-md-6"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="menu">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" ;data-target="#bs-example-navbar-collapse-1">
       					<span class="sr-only">Toggle navigation</span>
       					<span class="icon-bar"></span>
       					<span class="icon-bar"></span>
       					<span class="icon-bar"></span>
       				</button>
-              <h1><a class="navbar-brand" href="index.html"><span style="height: 250px; width: 30%;"><img class="inner-image" src="images/image1.png" style="height: 230px; width: 30%;"></span></a></h1>
+              <h1><a class="navbar-brand" href="index.html"><img class="inner-image img-responsive" src="images/image1.png" ></a></h1>
             </div>
           </div>
           <ul class="collapse navbar-collapse nav navbar-nav" id="bs-example-navbar-collapse-1">
-              <li><a href="#about" class="#about">Sobre nosotros</a><span data-hover="Home"></span></li>
-              <li><a href="#porque" class="#about">Nuestra filosofia</a><span data-hover="Home"></span></li>
-              <li><a href="#services" class="#about">Nuestros servicios</a><span data-hover="Home"></span></li>
-              <li><a href="#como" class="#about">Nuestro proceso</a><span data-hover="Home"></span></li>
+              <li><a id="aboutlink" href="#about">Sobre nosotros</a><span data-hover="Home"></span></li>
+              <li><a id="porquelink" href="#porque" class="#about">Nuestra filosofia</a><span data-hover="Home"></span></li>
+              <li><a id="serviceslink" href="#services" class="#about">Nuestros servicios</a><span data-hover="Home"></span></li>
+              <li><a id="comolink" href="#como" class="#about">Nuestro proceso</a><span data-hover="Home"></span></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
+
+	<section>
   <div id="exampleSlider">
     <div>
       <img src="images/road.jpg">
     </div>
   </div>
 <div class="about" id="about" style="height: 100%;">
-	<h3 class="heading"><span>¿Quienes somos?</span></h3>
+	<h3 class="heading">¿Quienes somos?</h3>
 	<div class="container">
 		<div class="services-grids">
-			<div class="col-md-12 services-grids-info sgi">
+			<div class="col-md-12 ">
 				<ul>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Somos una firma de Banca de Inversión  boutique, independiente y flexible.</a></li>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.</a></li>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 colocados.</a></li>
+					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Somos una firma de Banca de Inversión  boutique, independiente y flexible.</a></li><br>
+					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.</a></li><br>
+					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 colocados.</a></li><br>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -81,10 +140,11 @@
     <h3 class="heading"><span>Buscamos Relaciones a Largo Plazo</span></h3>
 	</div>
 </div>
+</section>
 
-
+<section id="revealAnim">
 <div class="about" id="porque">
-	<h3 class="heading"><span>¿Porque lo hacemos?</span></h3>
+	<h3 class="heading">¿Porque lo hacemos?</h3>
   <br>
   <br>
 	<div class="container">
@@ -113,26 +173,27 @@
 	</div>
 </div>
 <br><br><br>
-
+</section>
+<section id="revealAnim">
 <div class="services" style="background-color: #17224D;" id="services">
-		<h3 class="heading"><span>¿Que hacemos?</span></h3>
+		<h3 class="heading">¿Que hacemos?</h3>
   	<div class="container-fluid" style="margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px;">
     		<div class="col-md-12">
     			<h4></h4>
-    			<div class="serviceslefttop">
-    				<div class="col-md-4">
+    			<div class="servicesleftbottom">
+    				<div class="col-md-12">
     				<div class="grid1 clr1">
     					<i class="fa fa-home" aria-hidden="true"></i>
     					<h4>Asesoramos durante todo el proceso de compra-venta de empresas.</h4>
     				</div>
     				</div>
-    				<div class="col-md-4">
+    				<div class="col-md-12">
     				<div class="grid1 clr2">
     					<i class="fa fa-money" aria-hidden="true"></i>
     					<h4>Apoyamos en la valuación, análisis de condiciones particulares y del entorno.</h4>
     				</div>
     				</div>
-    				<div class="col-md-4">
+    				<div class="col-md-12">
     				<div class="grid1 clr3">
     					<i class="fa fa-building" aria-hidden="true"></i>
     					<h4>Asesoramos en el levantamiento de capital con inversionistas privados.</h4>
@@ -153,6 +214,7 @@
   		<div class="clearfix"></div>
   	</div>
 </div>
+</section>
 
 <br>
 <br>
@@ -160,21 +222,22 @@
 <br>
 <br>
 <br>
+<section>
 <div class="como" id="como">
-    <h3 class="heading"><span>¿Como lo hacemos?</span></h3>
+    <h3 class="heading">¿Como lo hacemos?</h3>
   <div class="container">
     <div class="inner_w3l_agile_grids">
       <div class="row">
           <ul class="resp-tabs-list">
           <div class="col-md-3">
-            <h4>Analisis</h4>
+            <br><h4>Analisis</h4>
             <br>
             <img src="images/analisis.png" alt=" " class="img-responsive" />
             <br>
             <h4>Entendemos la empresa, sus necesidades y su entorno.</h4>
           </div>
           <div class="col-md-3">
-            <h4>Oportunidades</h4>
+            <br><h4>Oportunidades</h4>
             <br>
             <img src="images/oportunidades.png" alt=" " class="img-responsive" />
             <br>
@@ -182,7 +245,7 @@
             <div></div>
           </div>
           <div class="col-md-3">
-            <h4>Propuestas</h4>
+            <br><h4>Propuestas</h4>
             <br>
             <img src="images/propuestas.png" alt=" " class="img-responsive" />
             <br>
@@ -190,7 +253,7 @@
             <div></div>
           </div>
           <div class="col-md-3">
-            <h4>Ejecucion</h4>
+            <br><h4>Ejecucion</h4>
             <br>
             <img src="images/ejecucion.png" alt=" " class="img-responsive" />
             <br>
@@ -202,13 +265,21 @@
     </div>
   </div>
 </div>
+</section>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-
+<script type="text/javascript">
+	$(window).load(function() {
+			// start up after 2sec no matter what
+			window.setTimeout(function(){
+					$('body').removeClass("loading").addClass('loaded');
+			}, 2000);
+	});
+</script>
 </body>
 
 <footer style="background-color: #17224D;">
