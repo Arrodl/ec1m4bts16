@@ -2,90 +2,21 @@
 <html lang="es">
 <head>
 <title>Coloca</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<meta charset="utf-8">
-
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
 
 <!-- default css files -->
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="./css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/animate.min.css" />
-	<link rel="stylesheet" href="./css/ionicons.min.css" />
-	<link rel="stylesheet" href="./css/styles.css" />
-	<link rel="stylesheet" href="./css/styles.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Codeply">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/animate.min.css" />
+<link rel="stylesheet" href="./css/ionicons.min.css" />
+<link rel="stylesheet" href="./css/styles.css" />
+<link rel="stylesheet" href="./css/styles.css" />
 
   <!--web font-->
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css  ?family=Hind:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
   <!--//web font-->
-
-  <!--styles-->
-  <style type="text/css">
-    .bgimg {
-      background-image: url("images/road.png");
-      display: inline-block;
-    }
-
-		.loading {
-    background: url('../images/ico_loading.gif') no-repeat center center; /*Esta parte hará la función de cargador mientras aparece el contenido*/
-		}
-		section {
-		    opacity: 0; /*El valor inicial de la opacidad del contenedor es 0, por medio de javascript haremos que aparezca al asignarle la clase .loaded_section*/
-		    -webkit-transition:opacity .6s;
-		    -moz-transition:opacity .6s;
-		    -o-transition:opacity .6s;
-		    transition: opacity .6s;
-		}
-		.loaded section {
-		    opacity: 1;
-		}
-
-		#revealAnim .images-container img {
-    -webkit-transition: -webkit-transform .6s .9s;
-    -moz-transition: -moz-transform .6s .9s;
-    transition: transform .6s .9s;
-		}
-		#revealAnim .images-container .back { z-index:2;
-		    -webkit-transform:translate3d(-40%, 0, 0);
-		       -moz-transform:translate3d(-40%, 0, 0);
-		            transform:translate3d(-40%, 0, 0);
-		}
-		#revealAnim .images-container .front {
-		    -webkit-transform:translate3d(61.6%, 0, 0);
-		       -moz-transform:translate3d(61.6%, 0, 0);
-		            transform:translate3d(61.6%, 0, 0);
-		}
-		#revealAnim .images-container .side {
-		    -webkit-transform:translate3d(-338%, 0, 0);
-		       -moz-transform:translate3d(-338%, 0, 0);
-		            transform:translate3d(-338%, 0, 0);
-		}
-		.viewing-page-2 #revealAnim .images-container img {
-		    -webkit-transform: translate3d(0, 0, 0) !important;
-		    -moz-transform: translate3d(0, 0, 0) !important;
-		    transform: translate3d(0, 0, 0) !important;
-		}
-  </style>
-	<script>
-	function goToByScroll(id){
-          // Reove "link" from the ID
-					id = id.replace("link", "");
-          // Scroll
-        $('html,body').animate({
-            scrollTop: $("#"+id).offset().top},
-            'slow');
-    }
-		$("#menu > ul > li > a").click(function(e) {
-          // Prevent a page reload when a link is pressed
-        e.preventDefault();
-          // Call the scroll function
-        goToByScroll($(this).attr("id"));
-    });
-		</script>
 
 </head>
 
@@ -113,12 +44,12 @@
 											<a class="page-scroll" href="#servicios">servicios</a>
 									</li>
 									<li>
-											<a class="page-scroll" href="#consultoria">nuestro proceso</a>
+											<a class="page-scroll" href="#analisis">nuestro proceso</a>
 									</li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 									<li>
-											<a class="page-scroll" data-toggle="modal" href="#aboutModal">Contacto</a>
+											<a class="page-scroll" href="#contacto">Contacto</a>
 									</li>
 							</ul>
 					</div>
@@ -127,7 +58,7 @@
 
 	<header id="inicio">
 	  <div class="inner">
-			 <img src="images/road.jpg" class="">
+			 <img src="images/logogrande.png" class="Nextia-logo img-responsive">
 			 <!--<h1>N<span id="E-nextia">E</span>XTIA</h1>-->
 		</div>
 	</header>
@@ -136,7 +67,7 @@
 			<div class="container">
 					<div class="row">
 							<div class="col-lg-12 text-center wow flipInX">
-									<h2 class="margin-top-0 text-primary"><span id="negrito-titulo">¿QUIENES </span> SOMOS?</h2>
+									<h2 class="margin-top-0 text-primary"><span id="negrito-titulo">SOBRE </span> NOSOTROS</h2>
 							</div>
 					</div>
 			</div>
@@ -158,25 +89,27 @@
 					</div>
 			</div>
 	</section>
-	<section style="background-color: #6E95CE;">
-		<div class="about" id="porque">
-			<h1 style="text-align: center; font-size: 35px; padding-top: 50px;" class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: #15489F">Porque lo </span> hacemos</h1>
+
+
+	<section style="background-color: #6E95CE;" id="proceso">
+		<div class="about">
+			<h1 style="text-align: center; font-size: 35px; padding-top: 50px;" class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: #15489F">NUESTRA </span> FILOSOFIA</h1>
 		  <br>
 		  <br>
 			<div class="container">
 				<div class="services-grids">
 					<div class="col-md-4 services-grids-info sgi">
-		        <h3 style="text-align: center; padding-top: 50px; color: #15489F">Soluciones</h3>
+		        <h3 style="text-align: center; padding-top: 50px; color: white">Soluciones</h3>
 		        <br><br>
 		        <br>
 						<p>Porque nos gusta aportar soluciones innovadoras a través de la resolución de retos, creando valor para nuestros clientes.</p>
 					</div>
 					<div class="col-md-4 services-grids-info">
-						<img src="images/hacer.png" class="img-rounded">
+						<img src="images/hacer.png" class="img-rounded img-responsive">
 					</div>
 					<div class="col-md-4 services-grids-info sgi1">
 		        <br><br>
-		        <h3 style="text-align: center; color: #15489F">Ayuda</h3>
+		        <h3 style="text-align: center; color: white">Ayuda</h3>
 		        <br><br>
 		        <br>
 						<p>Por que queremos ayudar a las empresas (motor de México) a crecer, generar empleos y contribuir con el crecimiento del país.</p>
@@ -187,133 +120,166 @@
 		</div>
 	</section>
 
-<section class="background4section">
-<div class="services" id="services">
-		<h1 style="color: #17224D; text-align: center; padding: 20px">¿Que hacemos?</h1>
-  	<div class="container-fluid" style="margin: auto; width: 60%; border: 3px solid #17224D; padding: 10px;">
-    		<div class="col-md-12">
-    			<h4></h4>
-    			<div class="servicesleftbottom">
-    				<div class="col-md-12">
-    				<div class="grid1 clr1">
-    					<i class="fa fa-home" aria-hidden="true"></i>
-    					<h4>Asesoramos durante todo el proceso de compra-venta de empresas.</h4>
-    				</div>
-    				</div>
-    				<div class="col-md-12">
-    				<div class="grid1 clr2">
-    					<i class="fa fa-money" aria-hidden="true"></i>
-    					<h4>Apoyamos en la valuación, análisis de condiciones particulares y del entorno.</h4>
-    				</div>
-    				</div>
-    				<div class="col-md-12">
-    				<div class="grid1 clr3">
-    					<i class="fa fa-building" aria-hidden="true"></i>
-    					<h4>Asesoramos en el levantamiento de capital con inversionistas privados.</h4>
-    				</div>
-    				</div>
-    				<div class="clearfix"></div>
-    			</div>
-    			<div class="servicesleftbottom">
-    				<div class="col-md-12">
-    				<div class="grid1 clr4">
-    					<i class="fa fa-home" aria-hidden="true"></i>
-    					<h4>Estructuramos ofertas publcas y Subsecuentes en Bolsa (Acciones, CKDs, CERPIs, FIBRAS, SPACs, entre otros).</h4>
-    				</div>
-    				</div>
-    				<div class="clearfix"></div>
-    			</div>
-    		</div>
-  		<div class="clearfix"></div>
-  	</div>
+<section id="servicios">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-12 text-center wow flipInX">
+						<h2 class="margin-top-0 text-primary" style="text-align: center; padding-bottom: 100px;"><span style="color: #17224D;">NUESTROS </span> </span> SERVICIOS</h2>
+				</div>
+		</div>
+		</div>
+		<br>
+		<br>
+
+
+		<div class="container">
+				<div class="row text-center">
+						<div class="col-md-4 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>DEUDA</b></p>
+								<p class="p-proceso">Estructuramos bonos para emitirlos en Bolsa.</p>
+								<p class="p-proceso">Asesoramos para obtener créditos privados  en las mejores condiciones posibles.</p>
+								<p class="p-proceso">Reestructuramos deuda actual por nueva en mejores condiciones.</p>
+						</div>
+						<div class="col-md-4 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>CAPITALES</b></p>
+								<p class="p-proceso">Estructuramos ofertas públicas iniciales y subsecuentes en bolsa (Acciones, CKDs, CERPIs, FIBRAS, SPACs, entre otros).</p>
+								<p class="p-proceso">Asesoramos en el levantamiento de capital con inversionistas privados.</p>
+						</div>
+						<div class="col-md-4 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>FUNCIONES Y ADQUISICIONES (M&A)</b></p>
+								<p class="p-proceso">Asesoramos durante todo el proceso de compra-venta de empresas.</p>
+								<p class="p-proceso">Apoyamos en la valuación, análisis de condiciones particulares y del entorno.</p>
+						</div>
+				</div>
+		</div>
 </div>
 </section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section>
-<div class="como" id="como">
-    <h3 class="heading">¿Como lo hacemos?</h3>
-  <div class="container">
-    <div class="inner_w3l_agile_grids">
-      <div class="row">
-          <ul class="resp-tabs-list">
-          <div class="col-md-3">
-            <br><h4>Analisis</h4>
-            <br>
-            <img src="images/analisis.png" alt=" " class="img-responsive" />
-            <br>
-            <h4>Entendemos la empresa, sus necesidades y su entorno.</h4>
-          </div>
-          <div class="col-md-3">
-            <br><h4>Oportunidades</h4>
-            <br>
-            <img src="images/oportunidades.png" alt=" " class="img-responsive" />
-            <br>
-            <h4>Identificamos las posibles alternativas de financiamiento.</h4>
-            <div></div>
-          </div>
-          <div class="col-md-3">
-            <br><h4>Propuestas</h4>
-            <br>
-            <img src="images/propuestas.png" alt=" " class="img-responsive" />
-            <br>
-            <h4>Presentamos las alternativas y asesoramos para tomar la mejor decisión.</h4>
-            <div></div>
-          </div>
-          <div class="col-md-3">
-            <br><h4>Ejecucion</h4>
-            <br>
-            <img src="images/ejecucion.png" alt=" " class="img-responsive" />
-            <br>
-            <h4>Vamos de la mano durante todo el proceso, de principio a fin.</h4>
-            <div></div>
-          </div>
-          </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<section id="analisis">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-12 text-center wow flipInX">
+								<h2 class="margin-top-0 text-primary"><span id="negrito-titulo">NUESTRO</span> PROCESO DE TRABAJO</h2>
+						</div>
+				</div>
+		</div>
+		<br>
+		<br>
+		<div class="container">
+				<div class="row text-center">
+						<div class="col-md-3 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>ANALISIS</b></p>
+								<img src="images/analisis.png" alt=" " class="img-responsive" />
+								<p class="p-proceso">Entendemos la empresa, sus necesidades y su entorno.</p>
+						</div>
+						<div class="col-md-3 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>OPORTUNIDADES</b></p>
+								<img src="images/oportunidades.png" alt=" " class="img-responsive" />
+								<p class="p-proceso">Identificamos las posibles alternativas de financiamiento.</p>
+						</div>
+						<div class="col-md-3 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>PROPUESTAS</b></p>
+								<img src="images/propuestas.png" alt=" " class="img-responsive" />
+								<p class="p-proceso">Identificamos las posibles alternativas de financiamiento.</p>
+						</div>
+						<div class="col-md-3 wow fadeInUp">
+								<p class="p-proceso" id="titulo-proceso"><b>EJECUCION</b></p>
+								<img src="images/ejecucion.png" alt=" " class="img-responsive" />
+								<p class="p-proceso">Vamos de la mano durante todo el proceso, de principio a fin.</p>
+						</div>
+				</div>
+		</div>
 </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<script type="text/javascript">
-	$(window).load(function() {
-			// start up after 2sec no matter what
-			window.setTimeout(function(){
-					$('body').removeClass("loading").addClass('loaded');
-			}, 2000);
-	});
+
+<div id="map"></div>
+<script>
+	function initMap() {
+		// Styles a map in night mode.
+		var map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 19.336791, lng: -99.197762},
+			zoom: 16,
+			styles:
+				[
+						{
+								"featureType": "all",
+								"stylers": [
+										{
+												"saturation": 0
+										},
+										{
+												"hue": "#e7ecf0"
+										}
+								]
+						},
+						{
+								"featureType": "road",
+								"stylers": [
+										{
+												"saturation": -70
+										}
+								]
+						},
+						{
+								"featureType": "transit",
+								"stylers": [
+										{
+												"visibility": "off"
+										}
+								]
+						},
+						{
+								"featureType": "poi",
+								"stylers": [
+										{
+												"visibility": "off"
+										}
+								]
+						},
+						{
+								"featureType": "water",
+								"stylers": [
+										{
+												"visibility": "simplified"
+										},
+										{
+												"saturation": -60
+										}
+								]
+						}
+				]
+		});
+		var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(19.336791, -99.197762),
+				map: map,
+				icon: 'images/map-marker.png',
+		});
+	}
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWqMzu7-r5vFs1Uvq9ZkR9coMgam3GCu0&callback=initMap" async defer></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/modernizr-2.6.2.min.js"></script>
+<script src="./js/jquery.easing.min.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/scripts.js"></script>
+
 </body>
 
-<footer style="background-color: #17224D;">
+<footer style="background-color: #17224D;" id="contacto">
   <div class="container">
     <div class="row" style="color: #6E95CE;">
       <div class="col-md-4" style="float: left;">
-        <div class="logofooter"><img src="images/logo.png"></div>
+        <div class="logofooter" style="padding-top: 50px;"><img src="images/logo.png"></div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
       <div class="col-md-4">
-        <p>Para mayor informacion y contacto. Rodrigo Labastida</p>
+        <p>Rodrigo Labastida</p>
         <p><i class="fa fa-map-pin"></i> Partner - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         <p><i class="fa fa-phone"></i> Tel. (55) : 5088 2070</p>
         <p><i class="fa fa-phone"></i> Cel. (55) : 5215 1346</p>
         <p><i class="fa fa-envelope"></i> E-mail : rlabastida@coloca.com.mx</p>
       </div>
       <div class="col-md-4">
-        <p>Para mayor informacion y contacto. Pablo Ceballos</p>
+        <p>Pablo Ceballos</p>
         <p><i class="fa fa-map-pin"></i> Associate - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         <p><i class="fa fa-phone"></i> Tel. (55) : 5080 2070</p>
         <p><i class="fa fa-phone"></i> Cel. (72) : 2512 1530</p>
