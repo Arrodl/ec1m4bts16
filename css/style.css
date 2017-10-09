@@ -6,6 +6,77 @@
 --*/
 /*-- Reset-Code --*/
 
+.roadimg {
+	background:
+	linear-gradient(
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.3)
+	),
+	/* bottom, image */
+	url("../images/road.jpg") center;
+	background-size: cover;
+}
+
+.background4section {
+	background:
+	linear-gradient(
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.3)
+	),
+	/* bottom, image */
+	url("../images/building.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+.sizef {
+	font-size: 20px:
+}
+
+#negrito-titulo {
+    color: #6E95CE;
+}
+
+@media(min-width:768px) {
+    .icon-lg {
+        font-size: 80px;
+    }
+
+    header {
+        min-height: 100%;
+    }
+
+    section {
+        min-height: 600px;
+        padding: 100px 0;
+    }
+
+}
+
+section {
+    padding: 70px 0;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+
+    background:
+        /* top, transparent red, faked with gradient */
+        linear-gradient(
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        /* bottom, image */
+        url("../img/fondo3.png");
+
+
+    background-position: left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -480,7 +551,7 @@ background: rgba(0, 0, 0, 0.17);
     text-transform: uppercase;
     padding-top:4em;
 }
-/*--//Effect 1--*/ 
+/*--//Effect 1--*/
 
 /* contact */
 .contact h4 {
@@ -904,7 +975,7 @@ i.glyphicon.glyphicon-arrow-right {
 .tab1 .team-img-w3-agile{
 	  background: url(../images/team1.jpg)no-repeat 0px 0px;
 }
-.tab2 .team-img-w3-agile{  
+.tab2 .team-img-w3-agile{
 	  background: #ffffff url(../images/team2.png)no-repeat 0px 0px;
 }
 .tab3 .team-img-w3-agile{
@@ -947,7 +1018,7 @@ i.glyphicon.glyphicon-arrow-right {
     font-size: 15px;
     color: #FFFFFF;
     line-height: 1.8em;
-    margin: 1.5em 0 
+    margin: 1.5em 0
 }
 b, strong {
     color: #212121;
@@ -1026,7 +1097,7 @@ ul.social-icons3{
 ul.social-icons3 li{
 	display:inline-block;
 }
-ul.social-icons3 li a{  
+ul.social-icons3 li a{
     display: block;
     height: 35px;
     width: 35px;
@@ -1128,7 +1199,7 @@ li.agileinfo_share {
 	padding-right:.5em;
 }
 .special-info-bottom ul li:nth-child(3){
-	padding-left:.5em;	
+	padding-left:.5em;
 }
 .special-info-bottom ul li:nth-child(2){
 	padding: 0 .5em;
@@ -1298,7 +1369,7 @@ div#stats h3.heading,div#services h3.heading {
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999; 
+	z-index: 999;
 	width: 40px;
 	height: 40px;
 	border: none;
@@ -1650,7 +1721,7 @@ div#stats h3.heading,div#services h3.heading {
 	}
 	#sl1, #sl2, #sl3, #sl4, #sl5, #sl2, #exampleSlider {
 		min-height: 500px;
-	}	
+	}
 	.services-grids-info.sgi,.services-grids-info.sgi1, .services-grids-info {
 		padding: 0 2em;
 		width: 100%;
@@ -1829,7 +1900,7 @@ div#stats h3.heading,div#services h3.heading {
 	}
 	.heading:before {
 		left: 37.65%;
-	}	
+	}
 
 }
 @media screen and (max-width: 568px){
@@ -2090,46 +2161,46 @@ div#stats h3.heading,div#services h3.heading {
 	}
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 @media screen and (max-width: 320px){
-	
+
 }
 
 /* responsive design */

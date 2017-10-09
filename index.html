@@ -12,7 +12,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/animate.min.css" />
+	<link rel="stylesheet" href="./css/ionicons.min.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
 
   <!--web font-->
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
@@ -85,99 +89,108 @@
 
 </head>
 
-<body class="loading">
-  <!--Menu-->
-  <div class="banner" id="home">
-    <nav class="navbar navbar-default">
-      <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6" id="menu">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" ;data-target="#bs-example-navbar-collapse-1">
-      					<span class="sr-only">Toggle navigation</span>
-      					<span class="icon-bar"></span>
-      					<span class="icon-bar"></span>
-      					<span class="icon-bar"></span>
-      				</button>
-              <h1><a class="navbar-brand" href="index.html"><img class="inner-image img-responsive" src="images/image1.png" ></a></h1>
-            </div>
-          </div>
-          <ul class="collapse navbar-collapse nav navbar-nav" id="bs-example-navbar-collapse-1">
-              <li><a id="aboutlink" href="#about">Sobre nosotros</a><span data-hover="Home"></span></li>
-              <li><a id="porquelink" href="#porque" class="#about">Nuestra filosofia</a><span data-hover="Home"></span></li>
-              <li><a id="serviceslink" href="#services" class="#about">Nuestros servicios</a><span data-hover="Home"></span></li>
-              <li><a id="comolink" href="#como" class="#about">Nuestro proceso</a><span data-hover="Home"></span></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-	<section>
-  <div id="exampleSlider">
-    <div>
-      <img src="images/road.jpg">
-    </div>
-  </div>
-<div class="about" id="about" style="height: 100%;">
-	<h3 class="heading">¿Quienes somos?</h3>
-	<div class="container">
-		<div class="services-grids">
-			<div class="col-md-12 ">
-				<ul>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Somos una firma de Banca de Inversión  boutique, independiente y flexible.</a></li><br>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.</a></li><br>
-					<li><i class="glyphicon glyphicon-arrow-right"> </i><a href="#">Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 colocados.</a></li><br>
-				</ul>
+<body>
+	<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+					<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand page-scroll" href="#inicio"><img id="logo-chiquito-nextia" src="images/logocpequeno.png"></a>
+					</div>
+					<div class="navbar-collapse collapse" id="bs-navbar">
+							<ul class="nav navbar-nav">
+									<li>
+											<a class="page-scroll" href="#acerca">sobre nosotros</a>
+									</li>
+									<li>
+											<a class="page-scroll" href="#proceso">nuestra filosofia</a>
+									</li>
+									<li>
+											<a class="page-scroll" href="#servicios">servicios</a>
+									</li>
+									<li>
+											<a class="page-scroll" href="#consultoria">nuestro proceso</a>
+									</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+									<li>
+											<a class="page-scroll" data-toggle="modal" href="#aboutModal">Contacto</a>
+									</li>
+							</ul>
+					</div>
 			</div>
-			<div class="clearfix"> </div>
+	</nav>
+
+	<header id="inicio">
+	  <div class="inner">
+			 <img src="images/road.jpg" class="">
+			 <!--<h1>N<span id="E-nextia">E</span>XTIA</h1>-->
 		</div>
-    <br>
-    <img src="images/quien.png" style="width: 50%; margin: auto; border: 3px solid #73AD21; padding: 10px;" class="img-responsive img-rounded">
-    <br>
-    <br>
-    <h3 class="heading"><span>Buscamos Relaciones a Largo Plazo</span></h3>
-	</div>
-</div>
-</section>
+	</header>
 
-<section id="revealAnim">
-<div class="about" id="porque">
-	<h3 class="heading">¿Porque lo hacemos?</h3>
-  <br>
-  <br>
-	<div class="container">
-		<div class="services-grids">
-			<div class="col-md-4 services-grids-info sgi">
-        <br>
-        <br>
-        <h3>Soluciones</h3>
-        <br><br>
-        <br>
-				<p>Porque nos gusta aportar soluciones innovadoras a través de la resolución de retos, creando valor para nuestros clientes.</p>
+	<section id="acerca" style="background-color: #17224D;">
+			<div class="container">
+					<div class="row">
+							<div class="col-lg-12 text-center wow flipInX">
+									<h2 class="margin-top-0 text-primary"><span id="negrito-titulo">¿QUIENES </span> SOMOS?</h2>
+							</div>
+					</div>
 			</div>
-			<div class="col-md-4 services-grids-info">
-				<img src="images/hacer.png" class="img-rounded">
+			<br>
+			<br>
+			<div class="container">
+					<div class="row">
+							<div class="col-xs-12"><br /><br />
+									<p style="font-size: 20px; color: white;" class="wow fadeInUp negrito-titulo">
+											Somos una firma de Banca de Inversión  boutique, independiente y flexible
+									</p><br />
+									<p style="font-size: 20px; color:  #1d8cad;" class="wow fadeInUp negrito-titulo">
+											Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.
+									</p><br />
+									<p style="font-size: 20px; color: white;" class="wow fadeInUp negrito-titulo">
+											Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 colocados.
+									</p>
+							</div>
+					</div>
 			</div>
-			<div class="col-md-4 services-grids-info sgi1">
-        <br><br>
-        <h3>Ayuda</h3>
-        <br><br>
-        <br>
-				<p>Por que queremos ayudar a las empresas (motor de México) a crecer, generar empleos y contribuir con el crecimiento del país.</p>
+	</section>
+	<section style="background-color: #6E95CE;">
+		<div class="about" id="porque">
+			<h1 style="text-align: center; font-size: 35px; padding-top: 50px;" class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: #15489F">Porque lo </span> hacemos</h1>
+		  <br>
+		  <br>
+			<div class="container">
+				<div class="services-grids">
+					<div class="col-md-4 services-grids-info sgi">
+		        <h3 style="text-align: center; padding-top: 50px; color: #15489F">Soluciones</h3>
+		        <br><br>
+		        <br>
+						<p>Porque nos gusta aportar soluciones innovadoras a través de la resolución de retos, creando valor para nuestros clientes.</p>
+					</div>
+					<div class="col-md-4 services-grids-info">
+						<img src="images/hacer.png" class="img-rounded">
+					</div>
+					<div class="col-md-4 services-grids-info sgi1">
+		        <br><br>
+		        <h3 style="text-align: center; color: #15489F">Ayuda</h3>
+		        <br><br>
+		        <br>
+						<p>Por que queremos ayudar a las empresas (motor de México) a crecer, generar empleos y contribuir con el crecimiento del país.</p>
 
+					</div>
+				</div>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
-	</div>
-</div>
-<br><br><br>
-</section>
-<section id="revealAnim">
-<div class="services" style="background-color: #17224D;" id="services">
-		<h3 class="heading">¿Que hacemos?</h3>
-  	<div class="container-fluid" style="margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px;">
+	</section>
+
+<section class="background4section">
+<div class="services" id="services">
+		<h1 style="color: #17224D; text-align: center; padding: 20px">¿Que hacemos?</h1>
+  	<div class="container-fluid" style="margin: auto; width: 60%; border: 3px solid #17224D; padding: 10px;">
     		<div class="col-md-12">
     			<h4></h4>
     			<div class="servicesleftbottom">
