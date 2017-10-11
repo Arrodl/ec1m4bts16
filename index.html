@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="./css/ionicons.min.css" />
 <link rel="stylesheet" href="./css/styles.css" />
 <link rel="stylesheet" href="./css/styles.css" />
+<script src="http://code.jquery.com/jquery-1.7rc2.js"></script>
 
 
 
@@ -27,26 +28,26 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand page-scroll" href="#inicio"><img id="logo-chiquito-nextia" src="images/logocpequeno.png"></a>
+							<a class="navbar-brand page-scroll" href="#inicio"><img id="logo-chiquito-nextia" src="images/logocpequeno.png" style="height: 30px; width: auto;"></a>
 					</div>
 					<div class="navbar-collapse collapse" id="bs-navbar">
 							<ul class="nav navbar-nav">
 									<li>
-											<a class="page-scroll" href="#acerca">sobre nosotros</a>
+											<a class="page-scroll" href="#acerca" id="quien" style="padding-top: 25px;">¿quiénes somos?</a>
 									</li>
 									<li>
-											<a class="page-scroll" href="#proceso">nuestra filosofia</a>
+											<a class="page-scroll" href="#servicios" id="que" style="padding-top: 25px;">¿qué hacemos?</a>
 									</li>
 									<li>
-											<a class="page-scroll" href="#servicios">servicios</a>
+											<a class="page-scroll" href="#analisis" id="como" style="padding-top: 25px;">¿cómo lo hacemos?</a>
 									</li>
 									<li>
-											<a class="page-scroll" href="#analisis">nuestro proceso</a>
+											<a class="page-scroll" href="#proceso" id="porque" style="padding-top: 25px;">¿por qué lo hacemos?</a>
 									</li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 									<li>
-											<a class="page-scroll" href="#contacto">Contacto</a>
+											<a class="page-scroll" data-toggle="modal" href="#aboutModal">Contacto</a>
 									</li>
 							</ul>
 					</div>
@@ -60,88 +61,107 @@
 		</div>
 	</header>
 
-	<section id="acerca" style="background-color: #17224D;">
+	<section id="acerca" style="background-color: #6D6E70;">
 			<div class="container">
 					<div class="row">
 							<div class="col-lg-12 text-center wow flipInX">
-									<h2 class="margin-top-0 text-primary"><span id="negrito-titulo">SOBRE </span> NOSOTROS</h2>
+									<h1 class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: white;">¿QUIÉNES </span> SOMOS?</h1>
 							</div>
 					</div>
 			</div>
 			<br>
 			<br>
 			<div class="container">
-					<div class="row">
-							<div class="col-xs-12"><br /><br />
-									<p style="font-size: 20px; color: white;" class="wow fadeInUp negrito-titulo">
-											Somos una firma de Banca de Inversión  boutique, independiente y flexible
-									</p><br />
-									<p style="font-size: 20px; color:  #1d8cad;" class="wow fadeInUp negrito-titulo">
-											Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.
-									</p><br />
-									<p style="font-size: 20px; color: white;" class="wow fadeInUp negrito-titulo">
-											Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 colocados.
-									</p>
+					<div class="row" style="width: 100%;">
+							<div class="col-md-12">
+								<ul>
+										<li style="font-size: 17px; color: white; padding: 10px;" class="wow fadeInUp negrito-titulo">
+												Somos una firma de Banca de Inversión  boutique, independiente y flexible
+										</li>
+										<li style="font-size: 17px; color:  #005E99; padding: 10px;" class="wow fadeInUp negrito-titulo">
+												Ofrecemos soluciones financieras a la medida de las necesidades de nuestros clientes.
+										</li>
+										<li style="font-size: 17px; color: white; padding: 10px;" class="wow fadeInUp negrito-titulo">
+												Tenemos experiencia en más de 40 emisiones de deuda y capitales, públicas y privadas que suman más de US$2,000 millones colocados.
+										</li>
+								</ul>
 							</div>
 					</div>
 			</div>
 	</section>
 
-
-	<section style="background-color: #6E95CE;" id="proceso">
-		<div class="about">
-			<h1 style="text-align: center; font-size: 35px; padding-top: 50px;" class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: #15489F">NUESTRA </span> FILOSOFIA</h1>
-		  <br>
-		  <br>
-			<div class="container">
-				<div class="services-grids">
-					<div class="col-md-4 services-grids-info sgi">
-		        <h3 style="text-align: center; padding-top: 50px; color: white">Soluciones</h3>
-		        <br><br>
-		        <br>
-						<p>Porque nos gusta aportar soluciones innovadoras a través de la resolución de retos, creando valor para nuestros clientes.</p>
-					</div>
-					<div class="col-md-4 services-grids-info">
-						<img src="images/hacer.png" class="img-rounded img-responsive">
-					</div>
-					<div class="col-md-4 services-grids-info sgi1">
-		        <br><br>
-		        <h3 style="text-align: center; color: white">Ayuda</h3>
-		        <br><br>
-		        <br>
-						<p>Por que queremos ayudar a las empresas (motor de México) a crecer, generar empleos y contribuir con el crecimiento del país.</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<section id="servicios">
+<section id="servicios" style="background-color: #154a9a;">
 	<div class="container">
 		<div class="row">
 				<div class="col-lg-12 text-center wow flipInX">
-						<h2 class="margin-top-0 text-primary" style="text-align: center; padding-bottom: 30px;"><span style="color: #17224D;">NUESTROS </span> </span> SERVICIOS</h2>
+						<h2 class="margin-top-0 text-primary" style="text-align: center; padding-bottom: 30px; color: #707070"><span style="color: white;">¿QUÉ </span> </span> HACEMOS?</h2>
 				</div>
 		</div>
 		</div>
-		<div class="container">
-				<div class="row text-center">
-						<div class="col-md-4 wow fadeInUp" style="padding: 10px">
-								<p class="p-proceso" id="titulo-proceso"><b>DEUDA</b></p>
-								<p class="p-proceso">Estructuramos bonos para emitirlos en Bolsa.</p>
-								<p class="p-proceso">Asesoramos para obtener créditos privados  en las mejores condiciones posibles.</p>
-								<p class="p-proceso">Reestructuramos deuda actual por nueva en mejores condiciones.</p>
+		<div class = "container hacer">
+				<ul class="nav nav-tabs nav-justified">
+					<br />
+				</ul>
+				<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="generalInformation">
+								<div class="row">
+									<div class="imageHolderGeneralInformation">
+										<div class="col-xs-12 col-sm-4">
+													<a id="1" role="button" data-toggle="modal" data-target="#modalDeu">
+													<img src="images/dueda.png" class="oaxImg" width="100%" data-image="images/deuda.png">
+													<figcaption align="center" style="color: white;font-size:20px; padding: 30px;"><b>DEUDA</b></figcaption>
+													</a>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<a  id="2" role="button" data-toggle="modal" data-target="#modalCap">
+														 <img src="images/cap.png" width="100%" class="oaxImg" data-image="images/capital.png">
+														 <figcaption align="center" style="color:white;font-size:20px; padding: 30px;"><b>CAPITALES</b></figcaption>
+														</a>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<a  id="3" role="button" data-toggle="modal" class="oaxImg" data-target="#modalFunc">
+														 <img src="images/adqu.png" width="100%" data-image="images/fusin.png">
+														 <figcaption align="center" style="color:white;font-size:20px; padding: 30px;"><b>FUNCIONES Y ADQUISICIONES (M&A)</b></figcaption>
+														</a>
+											</div>
+									</div>
+								</div>
 						</div>
-						<div class="col-md-4 wow fadeInUp style="padding: 10px"">
-								<p class="p-proceso" id="titulo-proceso"><b>CAPITALES</b></p>
-								<p class="p-proceso">Estructuramos ofertas públicas iniciales y subsecuentes en bolsa (Acciones, CKDs, CERPIs, FIBRAS, SPACs, entre otros).</p>
-								<p class="p-proceso">Asesoramos en el levantamiento de capital con inversionistas privados.</p>
+						<div class="modalimagesss modal fade" id="modalDeu" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img class="img-responsive" src="images/deuda.png" />
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-4 wow fadeInUp style="padding: 10px"">
-								<p class="p-proceso" id="titulo-proceso"><b>FUNCIONES Y ADQUISICIONES (M&A)</b></p>
-								<p class="p-proceso">Asesoramos durante todo el proceso de compra-venta de empresas.</p>
-								<p class="p-proceso">Apoyamos en la valuación, análisis de condiciones particulares y del entorno.</p>
+						<div class="modal fade" id="modalCap" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img class="img-responsive" src="images/capital.png" />
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="modalFunc" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img class="img-responsive" src="images/fusin.png" />
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+									</div>
+								</div>
+							</div>
 						</div>
 				</div>
 		</div>
@@ -152,42 +172,61 @@
 		<div class="container">
 				<div class="row">
 						<div class="col-lg-12 text-center wow flipInX">
-								<h2 class="margin-top-0 text-primary" style="padding-bottom: 20px;"><span id="negrito-titulo">NUESTRO</span> PROCESO DE TRABAJO</h2>
+								<h2 class="margin-top-0 text-primary" style="padding-bottom: 20px;"><span id="negrito-titulo" style="color: white">¿CÓMO</span> LO HACEMOS?</h2>
 						</div>
 				</div>
 		</div>
 		<div class="container">
 				<div class="row text-center">
-						<div class="col-md-3 wow fadeInUp">
-								<br /><p class="p-proceso" id="titulo-proceso"><b>ANALISIS</b></p>
+						<div class="col-md-3 wow fadeInUp" style="padding: 10px;">
 								<center>
-									<img src="images/analisis.png" style="padding: 5px;" class="img-responsive" />
+									<img src="images/analisis.png" style="padding: 5px;" class="img-responsive img-circle" /><h1 style="color: white;">1</h1>
 								</center>
-								<p class="p-proceso">Entendemos la empresa, sus necesidades y su entorno.</p>
+								<p class="p-proceso" style="color: white;">Entendemos la empresa, sus necesidades y su entorno.</p>
 						</div>
 						<div class="col-md-3 wow fadeInUp" style="padding: 10px;">
-								<p class="p-proceso" id="titulo-proceso"><b>OPORTUNIDADES</b></p>
 								<center>
-									<img src="images/oportunidades.png" style="padding: 5px;" class="img-responsive" />
+									<img src="images/oportunidad.png" style="padding: 5px;" class="img-responsive img-circle" /><h1 style="color: white;">2</h1>
 								</center>
-								<p class="p-proceso">Identificamos las posibles alternativas de financiamiento.	</p>
+								<p class="p-proceso" style="color: white;">Identificamos las posibles alternativas de financiamiento.	</p>
 						</div>
 						<div class="col-md-3 wow fadeInUp" style="padding: 10px;">
-								<p class="p-proceso" id="titulo-proceso"><b>PROPUESTAS</b></p>
 								<center>
-									<img src="images/propuestas.png" style="padding: 5px;" class="img-responsive" />
+									<img src="images/propuestas.png" style="padding: 5px;" class="img-responsive img-circle" /><h1 style="color: white;">3</h1>
 								</center>
-								<p class="p-proceso">Identificamos las posibles alternativas de financiamiento.</p>
+								<p class="p-proceso" style="color: white;">Presentamos las alternativas y asesoramos para tomar la mejor decisión.</p>
 						</div>
 						<div class="col-md-3 wow fadeInUp" style="padding: 10px;">
-								<p class="p-proceso" id="titulo-proceso"><b>EJECUCION</b></p>
 								<center>
-									<img src="images/ejecucion.png" style="padding: 5px;" class="img-responsive" />
+									<img src="images/ejecucion.png" style="padding: 5px;" class="img-responsive img-circle" /><h1 style="color: white;">4</h1>
 								</center>
-								<p class="p-proceso">Vamos de la mano durante todo el proceso, de principio a fin.</p>
+								<p class="p-proceso" style="color: white;">Vamos de la mano durante todo el proceso, de principio a fin.</p>
 						</div>
 				</div>
 		</div>
+</section>
+
+<section style="background-color: #154a9a;" id="proceso">
+	<div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 style="text-align: center; font-size: 35px; padding-top: 50px; color: white;" class="margin-top-0 text-primary"><span id="negrito-titulo" style="color: #707070">¿POR QUÉ </span> LO HACEMOS?</h1>
+					<ul>
+						<li style="padding: 20px; color: white;">
+							Porque nos gusta aportar soluciones innovadoras a través de la resolución de retos, creando valor para nuestros clientes.
+						</li>
+						<li style="padding: 20px; color: white;">
+							Porque queremos ayudar a las empresas (motor de México) a crecer, generar empleos y contribuir con el crecimiento del país.
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<img class="img-responsive img-rounded" src="images/porquelohacemos.png">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <div id="map"></div>
@@ -254,6 +293,38 @@
 		});
 	}
 </script>
+
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-body">
+						<img src="images/logo.png" id="logo-nextia-contacto" class="img-responsive wow animated zoomIn">
+						<br>
+						<div class="row">
+								<div class="col-xs-12 wow animated fadeInRight">
+										<address class="contact-details">
+												<h3>Detalles de Contacto</h3>
+												<p><i id="icono-direccion"></i>COLOCA<span>⁠⁠⁠Río Magdalena 326-303 | La Otra Banda </span> <span>A. Obregón | 01090 | CDMX</span><span> México</span></p><br>
+												<p><i id="icono-direccion"></i>Tel. (55) 5088 2070</p>
+												<p><i id="icono-direccion"></i>Cel. (55) 5215 1346</p>
+												<p><i id="icono-direccion"></i>contacto@coloca.com.mx</p>
+										</address>
+								</div>
+						</div>
+						<!--setting up new branch -->
+						<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> CERRAR </button>
+				</div>
+		</div>
+		</div>
+</div>
+
+
+
+
+<script>$("#quien").fadeIn(5000):
+$("#que").fadeIn(6000):
+$("#como").fadeIn(7000):
+$("#porque").fadeIn(8000):</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWqMzu7-r5vFs1Uvq9ZkR9coMgam3GCu0&callback=initMap" async defer></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
@@ -263,34 +334,35 @@
 <script src="./js/scripts.js"></script>
 
 </body>
-
-<footer style="background-color: #17224D;" id="contacto">
-  <div class="container">
-    <div class="row" style="color: #6E95CE;">
-      <div class="col-md-4">
-				<center>
-        	<div class="logofooter"><img src="images/logo.png" style="padding: 30px;"></div>
-				</center>
-			</div>
+<!--Start footer-->
+<footer id="footer">
+		<div class="container-fluid">
+				<br>
+				<div class="row">
+						<div class="col-sm-6 wow animated zoomIn text-center text-muted small">
+								<address class="contact-details">
+										<p>RIO MAGDALENA 326-303 | LA OTRA BANDA <span>A. OBREGÓN | 01090 | CDMX</span><span> México</span></p>
+								</address>
+						</div>
+						<div class="col-sm-3 wow animated zoomIn text-center text-muted small">
+								<address class="contact-details">
+										<p id="margin-phones2">Tel. (55) : 5088 2070</p>
+										<p id="margin-phones">Cel. (55) : 5215 1346</p>
+										<p></i>contacto@coloca.com.mx</p>
+								</address>
+						</div>
+						<div class="col-sm-3">
+							<img src="images/logogrande.png" style="height: 100px; width: auto"/>
+						</div>
+				</div>
+				<br>
+				<div class="row">
+						<div class="col-xs-12">
+								<p class="text-center text-muted small wow animated zoomIn">N<span id="E-nextia">E</span>XTIA ©2017</p>
+						</div>
+				</div>
 		</div>
-		<div class="row">
-      <div class="col-md-6" style="padding: 20px;">
-        <p>Rodrigo Labastida</p>
-        <p><i class="fa fa-map-pin"></i> Partner - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <p><i class="fa fa-phone"></i> Tel. (55) : 5088 2070</p>
-        <p><i class="fa fa-phone"></i> Cel. (55) : 5215 1346</p>
-        <p><i class="fa fa-envelope"></i> E-mail : rlabastida@coloca.com.mx</p>
-      </div>
-      <div class="col-md-6" style="padding: 20px;">
-        <p>Pablo Ceballos</p>
-        <p><i class="fa fa-map-pin"></i> Associate - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <p><i class="fa fa-phone"></i> Tel. (55) : 5080 2070</p>
-        <p><i class="fa fa-phone"></i> Cel. (72) : 2512 1530</p>
-        <p><i class="fa fa-envelope"></i> E-mail : rlabastida@coloca.com.mx</p>
-      </div>
-			</div>
-    </div>
-  </div>
 </footer>
+<!--End footer-->
 
 </html>

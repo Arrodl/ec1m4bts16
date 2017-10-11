@@ -7,20 +7,34 @@
     }
 }
 
-#proceso {
-  background: #17224D; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#17224D, #15489F); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#17224D, #15489F); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#17224D, #15489F); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#17224D, #15489F); /* Standard syntax */
+.hacer {
+	background-image: url(../images/fondo_1.jpg);
+	background-repeat: repeat;
+	overflow: hidden;
+	padding-bottom: 91px;
 }
+.hacer .oaxImg{
+	opacity: 0.5;
+}
+.hacer .oaxImg:hover{
+	opacity: 1.0;
+}
+
+.modalimagess img{
+  opacity: 1;
+}
+
+.modalimagess img:hover {
+  opacity: 1;
+}
+
 
 #span-contacto {
     color: #B40404;
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #1d8cad;
+    border-bottom: 1px solid #154A9A;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -28,7 +42,7 @@
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #1d8cad;
+    border-bottom: 1px solid #154A9A;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -86,14 +100,14 @@
 }
 
 #E-nextia, #p-azulito {
-    color: #1d8cad;
+    color: #154A9A;
 }
 
 #icono-social {
     color:#3b5998;
 }
 #icono-social:hover {
-    color:#1d8cad;
+    color:#154A9A;
 }
 
 .azulito{
@@ -101,7 +115,7 @@
 }
 
 .icono-servicios {
-    color: #1d8cad;
+    color: #154A9A;
 }
 
 #img-tecnologias, .Nextia-logo , #logo-chiquito-nextia #logo-nextia-contacto{
@@ -125,7 +139,7 @@
 }
 
 .Nextia-logo{
-    width: 550px;
+    width: 850px;
     position:absolute;
     bottom:0;
     right:0;
@@ -191,8 +205,8 @@
     height: 70px;
     padding: 8px;
     background: #fff;
-    border: 4px solid #1d8cad;
-    color: #1d8cad;
+    border: 4px solid #154A9A;
+    color: #154A9A;
     font-size: 28px;
     display: block;
     margin-left: auto;
@@ -218,7 +232,7 @@ body {
 }
 
 a {
-    color: #1d8cad;
+    color: #154A9A;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -226,7 +240,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #1d8cad;
+    color: #154A9A;
     outline: 0;
 }
 
@@ -246,7 +260,7 @@ p , ul{
 }
 
 .text-primary {
-    color: #1d8cad;
+    color: #005E99;
 }
 
 .modal-content {
@@ -272,7 +286,7 @@ footer {
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #1d8cad;
+    color: #154A9A;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -281,7 +295,7 @@ footer {
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: #1d8cad;
+    color: #154A9A;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -301,12 +315,12 @@ footer {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #1d8cad;
+    color: #005E99;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #1d8cad !important;
+    color: #005E99 !important;
     background-color: transparent;
 }
 
@@ -331,7 +345,7 @@ footer {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #f4f4f4;
+        color: #005E99;
     }
 
     .navbar-default .nav > li>a,
@@ -344,7 +358,7 @@ footer {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #3f4040;
+        color: #005E99;
     }
 
     .navbar-default.affix {
@@ -354,14 +368,14 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #1d8cad;
+        color: #154A9A;
         padding: 20px;
         letter-spacing: 1px;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #1d8cad;
+        color: #005E99;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -372,7 +386,7 @@ footer {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #1d8cad;
+        color: #154A9A;
     }
 }
 
@@ -383,11 +397,11 @@ header {
     background:
         /* top, transparent red, faked with gradient */
         linear-gradient(
-          rgba(255, 255, 255, 0.3),
-          rgba(255, 255, 255, 0.3)
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
         ),
         /* bottom, image */
-        url("../images/road.jpg");
+        url("../images/fondotitulo.png");
 
 
     background-position: left;
