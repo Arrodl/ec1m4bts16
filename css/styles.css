@@ -7,6 +7,62 @@
     }
 }
 
+@-webkit-keyframes appear {
+  0%    { display: none; opacity: 0; }
+  75%   { display: block; opacity: 0; }
+  100%  { display: block; opacity: 1;}
+}
+
+@keyframes appear {
+  0%    { opacity: 0; }
+  75%   { opacity: 0; }
+  100%  { opacity: 1;}
+}
+
+.animationtitle {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 2s;
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+.animationfirst {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: appear;
+  animation-duration: 5s;
+}
+.animationsecond {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 7s;
+  animation-name: appear;
+  animation-duration: 7s;
+}
+.animationthird {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 9s;
+  animation-name: appear;
+  animation-duration: 9s;
+}
+.animationfourth {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 11s;
+  animation-name: appear;
+  animation-duration: 11s;
+}
+.animationfifth {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 13s;
+  animation-name: appear;
+  animation-duration: 13s;
+}
+.animationseisv {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 15s;
+  animation-name: appear;
+  animation-duration: 15s;
+}
+
 .hacer {
 	background-image: url(../images/fondo_1.jpg);
 	background-repeat: repeat;
@@ -162,7 +218,15 @@
 }
 
 #proceso, #servicios, #consultoria, #equipo, #tecnologias{
-    background-color: white;
+    background-image: url(../images/azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#acerca, #analisis {
+    background-image: url(../images/gris.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #margin-phones{
@@ -299,7 +363,7 @@ footer {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #181818;
+    background-color: #1D1D1D;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -363,19 +427,19 @@ footer {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #222;
+        background-color: #1d1d1d;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #154A9A;
+        color: #1d1d1d;
         padding: 20px;
         letter-spacing: 1px;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #005E99;
+        color: #1d1d1d;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -401,10 +465,10 @@ header {
           rgba(255, 255, 255, 0.1)
         ),
         /* bottom, image */
-        url("../images/fondotitulo.png");
+        url("../images/fondotitulo.jpeg");
 
 
-    background-position: left;
+    background-position: right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
